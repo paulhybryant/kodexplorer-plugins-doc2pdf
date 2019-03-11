@@ -15,6 +15,7 @@ kodReady.push(function(){
               error:core.ajaxError,
               success:function(data){
                 Tips.close('转换完成!');
+                ui.f5();
               }
             });
         }

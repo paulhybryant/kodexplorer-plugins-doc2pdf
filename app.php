@@ -17,7 +17,7 @@ class doc2pdfPlugin extends PluginBase{
       $path = urldecode(_DIR($this->in['path']));
       $cmd = "HOME=/tmp soffice --headless --invisible --convert-to pdf " . $path . " --outdir " . dirname($path);
       $result = shell_exec($cmd);
-      echo "<script>console.log( 'Run: " . $cmd . "' );</script>";
-      echo "<script>console.log( 'Result: " . $result . "' );</script>";
+      # debugging
+      # echo "<script>console.log( 'Run: " . $cmd . "' );</script>";
     }
 }
